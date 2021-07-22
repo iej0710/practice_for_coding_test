@@ -1,7 +1,7 @@
 T = int(input())
 
-arr = []
 for i in range(T):
+    arr = []
     flag = 1
     s = input()
     for j in s:
