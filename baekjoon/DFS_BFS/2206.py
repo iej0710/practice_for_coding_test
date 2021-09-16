@@ -1,3 +1,4 @@
+import sys
 from collections import deque
 
 n, m = map(int,input().split())
@@ -13,9 +14,9 @@ delta_x = [1, -1, 0, 0]
 delta_y = [0, 0, 1, -1]
 visited[1][0][0] = 1
 while len(process) > 0:
-    print(process)
     y,x,count = process.popleft()
     if x == m - 1 and y == n - 1:
+        print(visited[count][y][x])
         flag = 1
         break
     for dx,dy in zip(delta_x,delta_y):
