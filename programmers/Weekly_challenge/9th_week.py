@@ -28,7 +28,6 @@ def solution(n, wires):
                     graph[wires[j][1]] = [wires[j][0]]
         tree1 = bfs(graph, list(graph.keys())[0], set())
         answer = min(answer, abs(n - (2 * len(tree1))))
-
     return answer
 
 print(solution(9,[[1,3],[2,3],[3,4],[4,5],[4,6],[4,7],[7,8],[7,9]]))
